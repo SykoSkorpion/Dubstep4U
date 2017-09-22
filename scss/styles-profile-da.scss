@@ -1,0 +1,37 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    background-image: url(../img/dark-triangles.png);
+    font-family: $defaultFont;
+    color: $fontLight;
+}
+
+#main-nav{
+    @include nav;
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}
+
+#ur-profile{
+    @include iconSmall;
+    background-image: url(../img/symbols/ur-profile-light.png);
+}
+
+#profile-info{
+    background-color: #ffc1c1;
+    width: 40%;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 15px;
+    margin: 0 29%;
+    p{
+        text-align: center;
+        margin: 70px 20px;
+        font-size: 30px;
+    }
+}

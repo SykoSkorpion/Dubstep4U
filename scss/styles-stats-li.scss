@@ -1,0 +1,18 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    background-image: url(../img/hypnotize.png);
+    font-family: $defaultFont;
+    color: $fontLight;
+}
+
+#main-nav{
+    @include nav;
+}
+
+#donut{
+    @include iconSmall;
+    background-image: url(../img/symbols/chart-dark.png);
+}

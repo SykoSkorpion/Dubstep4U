@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-image: url(../img/dark-triangles.png);
+  font-family: sans-serif;
+  color: red; }
+
+nav {
+  width: 100%;
+  height: 60px;
+  font-size: 30px;
+  padding: 0 15%; }
+  nav ul {
+    padding: 10px; }
+  nav li {
+    margin: 20px;
+    display: inline;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    nav li:hover {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-style: solid;
+      border-color: red;
+      border-width: 5px;
+      border-radius: 5px; }
+  nav a {
+    text-decoration: none;
+    color: #000;
+    text-align: center; }
+  nav a {
+    color: red;
+    text-decoration: none; }
+
+#menu {
+  padding: 100px 0 0 14.5%; }
+  #menu:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#profile-wrap {
+  margin: 20px;
+  float: left;
+  cursor: pointer; }
+
+#ur-profile {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffc1c1;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3;
+  -ms-transition: 0.3;
+  -o-transition: 0.3;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+  background-image: url(../img/symbols/ur-profile-light.png); }
+  #ur-profile:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+    -webkit-transition: 0.3;
+    transition: 0.3; }
+
+#uploads-wrap {
+  margin: 20px;
+  float: left;
+  cursor: pointer; }
+
+#ur-uploads {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffc1c1;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3;
+  -ms-transition: 0.3;
+  -o-transition: 0.3;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+  background-image: url(../img/symbols/ur-uploads-light.png); }
+  #ur-uploads:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+    -webkit-transition: 0.3;
+    transition: 0.3; }
+
+#notifications-wrap {
+  margin: 20px;
+  float: left;
+  cursor: pointer; }
+
+#notifications {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffc1c1;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3;
+  -ms-transition: 0.3;
+  -o-transition: 0.3;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+  background-image: url(../img/symbols/notification-light.png); }
+  #notifications:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+    -webkit-transition: 0.3;
+    transition: 0.3; }
+
+#chart-wrap {
+  margin: 20px;
+  float: left;
+  cursor: pointer; }
+
+#chart {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ffc1c1;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3;
+  -ms-transition: 0.3;
+  -o-transition: 0.3;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+  background-image: url(../img/symbols/chart-light.png); }
+  #chart:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+    -webkit-transition: 0.3;
+    transition: 0.3; }
+
+h2 {
+  color: red;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; }

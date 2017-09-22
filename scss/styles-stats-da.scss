@@ -1,0 +1,36 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    background-image: url(../img/dark-triangles.png);
+    font-family: $defaultFont;
+    color: $fontLight;
+}
+
+#main-nav{
+    @include nav;
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}
+
+#donut{
+    @include iconSmall;
+    background-image: url(../img/symbols/chart-light.png);
+}
+
+#chart{
+    background-image: url(../img/pie-chart.png);
+    width: 500px;
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ffc1c1;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 30px 30%;
+}

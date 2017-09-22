@@ -1,0 +1,63 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    background-image: url(../img/hypnotize.png);
+    font-family: $defaultFont;
+    color: $fontLight;
+}
+
+nav{
+    @include nav;
+}
+
+#menu{
+    padding: 10px 15% 10px 14.5%;
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+#profile-wrap{
+    @include iconWrap;
+}
+
+#ur-profile{
+    @include icon;
+    background-image: url(../img/symbols/ur-profile-dark.png);
+}
+
+#uploads-wrap{
+    @include iconWrap;
+}
+
+#ur-uploads{
+    @include icon;
+    background-image: url(../img/symbols/ur-uploads-dark.png);
+}
+
+#notifications-wrap{
+    @include iconWrap;
+}
+
+#notifications{
+    @include icon;
+    background-image: url(../img/symbols/notification-dark.png);
+}
+
+#chart-wrap{
+    @include iconWrap;
+}
+
+#chart{
+    @include icon;
+    background-image: url(../img/symbols/chart-dark.png);
+}
+
+h2{
+    @include iconHeading;
+}
+
