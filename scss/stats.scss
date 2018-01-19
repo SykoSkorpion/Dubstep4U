@@ -1,0 +1,81 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/hypnotize.png);
+    font-family: $default;
+    color: $fontLight;
+
+    #main-nav{
+        @include nav;
+    }
+
+    #change-theme{
+        @include chg-thm-l;
+    }
+
+    #donut{
+        @include iconSmall;
+        background-image: url(../img/symbols/chart-dark.png);
+    }
+
+    #pie{
+        background-image: url(../img/stats-chart.png);
+        background-color: grey;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 590px;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 3px;
+        border-color: red;
+        margin:  0 25% 20px;
+    }
+
+}
+
+.dark-theme{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/dark-triangles.png);
+    font-family: $default;
+    color: $fontLight;
+
+    #main-nav{
+        @include nav;
+        a{
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+    #donut{
+        @include iconSmall;
+        background-image: url(../img/symbols/chart-light.png);
+    }
+
+    #pie{
+        background-image: url(../img/stats-chart.png);
+        background-color: lightgray;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 590px;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 3px;
+        border-color: red;
+        margin:  0 25% 20px;
+    }
+    
+}

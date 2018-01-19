@@ -1,0 +1,75 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/hypnotize.png);
+    font-family: $default;
+    color: $fontLight;
+    
+    #main-nav{
+        @include nav;
+    }
+    
+    #change-theme{
+        @include chg-thm-l;
+    }
+
+    #notifications{
+        @include iconSmall;
+        background-image: url(../img/symbols/notification-dark.png);
+    }
+
+    #noti-table{
+        @include table;
+        margin: 0 15%;
+        width: 70%;
+        border-style: solid;
+        border-color: red;
+        border-width: 4px;
+        font-size: 20px;
+        th{
+            padding: 10px 0;
+            border-style: solid;
+            border-bottom-width: 2px;
+            border-right-width: 2px;
+        }
+        td{
+            padding: 15px 0;
+            border-style: solid;
+            border-right-width: 2px;
+        }
+}
+
+}
+
+.dark-theme{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/dark-triangles.png);
+    font-family: $default;
+    color: $fontLight;
+
+    #main-nav{
+        @include nav;
+        a{
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+    #notifications{
+        @include iconSmall;
+        background-image: url(../img/symbols/notification-light.png);
+    }
+}
+    
+

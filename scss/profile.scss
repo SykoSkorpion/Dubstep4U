@@ -1,0 +1,68 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/hypnotize.png);
+    font-family: $default;
+    color: $fontLight;
+
+#main-nav{
+    @include nav;
+}
+    
+#change-theme{
+    @include chg-thm-l;
+}
+
+#ur-profile{
+    @include iconSmall;
+    background-image: url(../img/symbols/ur-profile-dark.png);
+}
+
+#profile-info{
+    background-color: #ffc1c1;
+    width: 40%;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 15px;
+    margin: 0 29%;
+    p{
+        text-align: center;
+        margin: 70px 20px;
+        font-size: 30px;
+    }
+}
+
+}
+
+.dark-theme{
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    background-image: url(../img/dark-triangles.png);
+    font-family: $default;
+    color: $fontLight;
+
+#main-nav{
+    @include nav;
+    a{
+        color: red;
+        text-decoration: none;
+    }
+}
+
+#ur-profile{
+    @include iconSmall;
+    background-image: url(../img/symbols/ur-profile-light.png);
+}
+
+}
